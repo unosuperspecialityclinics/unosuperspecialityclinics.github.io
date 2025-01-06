@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+<title>UNO - Super speciality Clinic</title>
+<meta name="author" content="Themezinho">
+<meta name="description" content="Medicina - Medical HTML Template">
+<meta name="keywords" content="html, template, carousel, themezinho, medical, html5">
+
+<!-- SOCIAL MEDIA META -->
+<meta property="og:description" content="Medicina - Medical HTML Template">
+<meta property="og:image" content="http://www.themezinho.net/medicina/preview.png">
+<meta property="og:site_name" content="Medicina">
+<meta property="og:title" content="Medicina">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.themezinho.net/medicina">
+
+<!-- TWITTER META -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@themezinho">
+<meta name="twitter:creator" content="@themezinho">
+<meta name="twitter:title" content="Medicina">
+<meta name="twitter:description" content="Medicina - Medical HTML Template">
+<meta name="twitter:image" content="http://www.themezinho.net/medicina/preview.png">
+
+<!-- FAVICON FILES -->
+<link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+<link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+<link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+<link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+<link href="./images/Home_page/Favicon_UnoSuperSpecialityClinics_best_urology_neurosurgery_oncology_Treatments_in_Kakinada.jpg" rel="shortcut icon">
+<script src="https://kit.fontawesome.com/742df65007.js" crossorigin="anonymous"></script>
+
+<!-- CSS FILES -->
+<link href="css/ionicons.min.css" rel="stylesheet">
+<link href="css/jquery.fancybox.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/datepicker.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet" type="text/css"  />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<noscript>
+<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+</noscript>
+ 
+</head><body>
+  <header  id="main_img">
+    <div class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-5">  <span class="phone" > <i class="ion-iphone"></i> 8309979799 </span> </div>
+           <div class="col-md-6 col-sm-5 hidden-xs">
+            <form>
+              <input type="text" id="search-input" placeholder="Type a word to find"  onclick="search()" style="border-radius: 25px;">
+              <button type="button" id="search-button" onclick="search()" style="border-radius: 25px; margin:10px; background:#3ED2ECBC;  border-color:#01a3d4; color:white">Search</button>
+            </form>
+           </div>
+           <div class="col-md-3 col-sm-4 col-xs-7">
+            <ul class="language">
+              <li><a href="#" ><i class="fa-solid fa-location-dot fa-lg" style="margin-right: 8px;"></i> Kakinada </a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+
+   <!-- Script for search bar -->
+
+   <script>
+    function search() {
+        var searchTerm = document.getElementById('search-input').value.toLowerCase();
+
+        // Define your services or keywords for searching
+        var services = ["urology", "neurosurgery", "oncology", "women's health", "cardiology", "pediatrics", "dermatology", "internal medicine", "surgical procedures", "rehabilitation", "health checkup", "wellness programs", "telemedicine", "emergency care", "medical imaging","stapler-circumcision"];
+
+        // Check if the search term matches any service
+        if (services.includes(searchTerm)) {
+            // Redirect to the corresponding service page
+            switch (searchTerm) {
+                case "urology":
+                    // Redirect to the Urology page
+                    window.location.href = "/urology.html";
+                    break;
+                case "neurosurgery":
+                    // Redirect to the Neurosurgery page
+                    window.location.href = "/neurosurgery.html";
+                    break;
+                case "oncology":
+                    // Redirect to the Oncology page
+                    window.location.href = "/oncology.html";
+                    break;
+                case "stapler-circumcision":
+                    // Redirect to the specific section within the Urology page
+                    window.location.href = "/urology.html#stapler-circumcision";
+                    break;
+                default:
+                    console.log('Unexpected service: ' + searchTerm);
+            }
+        } else {
+            // Handle the case where the search term does not match any service
+            console.log('Service not found: ' + searchTerm);
+        }
+
+        // Clear the search input for better user experience (optional)
+        document.getElementById('search-input').value = '';
+    }
+</script>
+
+<!-- navbar -->
+  
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle toggle-menu menu-left push-body" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html"><img src="./images/Home_page/navbar_logo_UnoSuperSpecialityClinincs_best_Urology_NeuroSurgery_Oncology_kakinada.jpg"   alt="Image"></a> </div>
+      
+     <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="bs-example-navbar-collapse-1">
+      <form class="visible-xs">
+        <input type="text" placeholder="Type a word to find">
+        <!-- <input type="submit" value="SEARCH"> -->
+      </form>
+      <ul class="social-media hidden-sm  hidden-md">
+          
+        <li><a href="https://www.facebook.com/profile.php?id=61554331074293" target="blank">  <i   class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/uno_super_speciality_clinic/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="blank">  <i   class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/UNO_clinic_" target="blank">  <i  class="fab fa-twitter"></i> </a></li>
+        <li><a href="https://www.linkedin.com/in/unosuper-specialityclinics/" target="blank"> <i   class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://in.pinterest.com/unosuperspecialityclinics/" target="blank">  <i   class="fa-brands fa-pinterest"></i></a></li> 
+        <li><a href="https://www.youtube.com/channel/UCi9Sh0usF_y3BI_C7nENAUg" target="blank">  <i   class="fab fa-youtube"></i></a></li>
+     
+     
+      </ul>
+
+      <ul class="social-media hidden-sm  hidden-lg">
+        
+
+        <li><a href="https://www.facebook.com/profile.php?id=61554331074293" target="blank">  <i  style="font-size:16px;"  class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/uno_super_speciality_clinic/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="blank">  <i style="font-size:16px;"    class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/UNO_clinic_" target="blank">  <i  style="font-size:16px;"  class="fab fa-twitter"></i> </a></li>
+        <li><a href="https://www.linkedin.com/in/unosuper-specialityclinics/" target="blank"> <i   style="font-size:16px;"  class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://in.pinterest.com/unosuperspecialityclinics/" target="blank">  <i  style="font-size:16px;"   class="fa-brands fa-pinterest"></i></a></li> 
+        <li><a href="https://www.youtube.com/channel/UCi9Sh0usF_y3BI_C7nENAUg" target="blank">  <i  style="font-size:16px;"   class="fab fa-youtube"></i></a></li>
+     
+     
+      </ul>
+
+       
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a>
+        
+         </li>
+        <li ><a href="departments.html" >Departments</a>
+          <ul>
+            <li><a href="urology.html " style="border-bottom: 1px solid transparent; cursor: pointer;" onmouseover="this.style.borderBottom='3px solid #3b2b98'" onmouseout="this.style.borderBottom='1px solid transparent'">UROLOGY</a></li>
+            <li ><a href="Neurosurgery.html" style="border-bottom: 1px solid transparent; cursor: pointer;" onmouseover="this.style.borderBottom='3px solid #01a3d4'" onmouseout="this.style.borderBottom='1px solid transparent'">NEUROSURGERY&nbsp;</a></li>
+            <li><a href="oncology.html" style="border-bottom: 1px solid transparent; cursor: pointer;" onmouseover="this.style.borderBottom='3px solid #df0e86  '" onmouseout="this.style.borderBottom='1px solid transparent'">ONCOLOGY</a></li>
+          </ul>
+        </li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+      </ul>
+     </div>
+   </div>
+ </nav>
+   </header>
+ 
+<section>
+  <div class="" style="margin-top: -80px;">
+    <a href="#section1"><img class="img-fluid" src="./images/contact&appointment/appointment_Titleimg_UnoSuperSpecialityClinics_Best_Urology_NeuroSurgery_Oncology_Treatments_in_Kakinada.jpg" alt="" style="width: 100%;"></a> 
+  </div>
+</section>
+
+
+
+
+
+
+<section class="appointment_p" id="section1">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Appointment</h2>
+      </div>
+      <form action="appoitmentmail.php" method="post" >
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <label>Patient name</label>
+          <input type="text" name="patient">
+        </div>
+         <div class="col-md-4 col-sm-4 col-xs-12">
+          <label>Phone number</label>
+          <input type="text" id="phone" name="phone">
+        </div>
+         <div class="col-md-4 col-sm-4 col-xs-12">
+          <label>E-mail</label>
+          <input type="text" name="email">
+        </div>
+         <div class="col-xs-12">
+          <hr>
+        </div>
+         <div class="col-md-4 col-sm-6 col-xs-12 date">
+          <label>Select date</label>
+          <input type="text" name="date" class="datepicker" data-date-format="mm/dd/yy" placeholder="mm/dd/yy" maxlength="8">
+        </div>
+         <div class="col-md-4 col-sm-6 col-xs-12 department">
+          <label >Department</label>
+          <select name="department">
+            <option  >Department</option>
+            <option value="UROLOGY">UROLOGY</option>
+            <option value="NEUROSURGERY" >NEUROSURGERY</option>
+            <option value="ONCOLOGY"> ONCOLOGY</option>
+          </select>
+        </div>
+           <div class="col-md-4 col-sm-12 col-xs-12 gender">
+              <input type="radio" name="gender" id="male" value="male">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="female">
+              <label for="female">Female</label>
+              <input type="submit" value="MAKE IT">
+          </div>
+       
+      
+       </form>
+     </div>
+   </div>
+ </section>  
+
+
+
+
+
+
+
+
+
+ <section class="gallery" style="margin-top: -80px;" >
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xl-6  col-lg-6  col-md-6 col-sm-12 col-xs-12  ">
+        <h1 class="title-bottom-line" style="color:#555555;" ><strong>Clinic Hours</strong></h1>
+        <p>Evening</p>
+        <p>06:00 p.m - 09:00 p.m </p>
+      </div>
+
+      <div class="col-xl-6  col-lg-6  col-md-6 col-sm-12 col-xs-12  ">
+        <h1 class="title-bottom-line" style="color:#555555;" ><strong>Contact Information</strong></h1>
+        <p>Phone: +91 8309979799</p>
+        <p>Email: unosuperspecialityclinics@gmail.com </p>
+        
+      </div>
+      <!-- end col-12 -->
+    </div>
+  
+</section>
+  
+ 
+<!-- WhatsApp   -->
+
+<a href="https://api.whatsapp.com/send?phone=8309979799" class="whatsapp-link shadow" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<!-- upper arrow 
+-->
+
+<div class="circle-icon-container">
+<div class="circle-icon">
+<a href="#main_img" class="circle-icon "  ><i class="fas fa-arrow-up"></i></a>
+</div>
+</div>
+
+<footer class="bg_colour_foot hidden-sm hidden-xs " >
+  <div class=" ">
+
+  
+      <div class="container justify-content-center ">
+
+
+          <div class="row">
+            
+                <div class="">
+                      <div class="  col-md-3 col-sm-6 col-xs-6   ">
+                          <img src="./images/Home_page/footerLogo_UnoSuperSpecilalityClinics_Best_in_Kakinada.jpg" alt="Image" class="img-fluid mx-auto d-block bod">
+                      </div>
+            
+                      <div class="  col-md-3 col-sm-6 col-xs-6   ">
+                          <ul class="text-center ">
+                              <li><h3 style="color:white"><strong>Menu</strong></h3></li>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="departments.html">Departments</a></li>
+                              <li><a href="contact-us.html">Contact us</a></li>
+                              <li><a href="appointment.html">Appointment</a></li>
+                          </ul>  
+                      </div>
+            
+                      <div class="  col-md-3 col-sm-6 col-xs-6 ">
+                          <ul class="text-center">
+                              <li><h3 style="color:white"><strong>Our Services</strong></h3></li>
+                              <li><a href="urology.html">Urology</a></li>
+                              <li><a href="Neurosurgery.html">Neurosurgery</a></li>
+                              <li><a href="oncology.html">Oncology</a></li>
+                          </ul>
+                      </div>
+
+                      <div class="  col-md-3 col-sm-6 col-xs-6  text-center  ">
+                          <div class="foot_icon ">
+                              <ul class="list-inline text-center">
+                                  <li><h3 style="color:white"><strong>Social Media</strong> </h3></li>
+                                  <li><p class="mt-5">
+
+                                      <a href="https://www.facebook.com/profile.php?id=61554331074293" target="blank">&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i></a>
+                                      <a href="https://www.instagram.com/uno_super_speciality_clinic/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="blank">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram"></i></a>
+                                      <a href="https://twitter.com/UNO_clinic_" target="blank">&nbsp;&nbsp;<i class="fab fa-twitter"></i></a>
+                                     
+                                      <a href="https://www.linkedin.com/in/unosuper-specialityclinics/" target="blank">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-linkedin"></i></a>
+                                      <a href="https://in.pinterest.com/unosuperspecialityclinics/"  target="blank" >&nbsp;&nbsp;&nbsp; &nbsp;<i class="fab fa-pinterest"></i></a>
+                                      <a href="https://www.youtube.com/channel/UCi9Sh0usF_y3BI_C7nENAUg" target="_blank">&nbsp;&nbsp;&nbsp; &nbsp;<i class="fa-brands fa-youtube" target="blank"></i></a>
+
+
+                                    </p></li>
+                              </ul>
+                          </div>
+            
+                          <div class="row">
+                              <div class="col-12">
+                                  <ul>
+                                      <li>  <h3 style="color:white"> <i class="ion-iphone"></i><strong>&nbsp;&nbsp;8309979799</strong> </h3></li>                    
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+
+          </div>
+
+      </div>
+  </div>
+
+
+</footer>  
+<div class="footer-area-bottom theme-bg  hidden-xs hidden-sm visible-md visible-lg visible-xl  "  >
+  <div class="container ">
+     <div class="row ">
+        <div class="  col-lg-8 col-md-8 col-sm-7 ">
+          
+              <span style="color:#0C0531" class="text-center ">  ©2023 UNO Super Speciality Clinics .  All Rights Reserved by <a href="https://bhavicreations.com/" target="_blank" style="text-decoration: none;color:#e03f9a">Bhavi Creations</a> </span>
+           
+        </div> 
+        <div class=" col-lg-4 col-md-4 col-sm-5">
+          
+            
+                  <p><a href="terms.html"  class="text-center" style="text-decoration: none;color:#e03f9a"> Terms and conditions  </a> &nbsp;&nbsp;&nbsp;
+                <a href="privacy.html"  class="text-center" style="text-decoration: none;color:#e03f9a">Privacy & policy</a> 
+               </p>
+           
+        </div>
+     </div>
+  </div>
+</div>
+
+<footer class="bg_colour_foot hidden-md visible-sm  visible-xs" >
+
+
+
+
+<div class=" ">
+
+
+      <div class="container justify-content-center ">
+
+                <div class="row ">
+
+                  <div class="   col-sm-6 col-xs-6   ">
+                    <img src="./images/Home_page/footerLogo_UnoSuperSpecilalityClinics_Best_in_Kakinada.jpg" alt="Image" class="img-fluid mx-auto d-block bod">
+                  </div>
+                  
+                  <div class="    col-sm-6 col-xs-6 ">
+                    <ul class="text-center">
+                        <li><h3 style="color:white"><strong>Our Services</strong></h3></li>
+                        <li><a href="urology.html">Urology</a></li>
+                        <li><a href="Neurosurgery.html">Neurosurgery</a></li>
+                        <li><a href="oncology.html">Oncology</a></li>
+                    </ul>
+                  </div>
+
+                </div>  
+
+
+                <div class="row d-flex">
+                  <div class="  col-md-3 col-sm-4 col-xs-4   ">
+                    <ul class="text-center ">
+                        <li><h3 style="color:white"><strong>Menu</strong></h3></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                    </ul>  
+                  </div>
+
+                  <div class="  col-md-3 col-sm-8 col-xs-8  text-center  ">
+                  <div class="foot_icon ">
+                      <ul class="list-inline text-center">
+                          <li><h3 style="color:white"><strong>Social Media</strong> </h3></li>
+                          <li><p class="mt-5">
+
+                            <a  href="https://www.facebook.com/profile.php?id=61554331074293" target="blank">
+                              &nbsp;&nbsp;<i class="fa-brands fa-facebook"></i>
+                            
+                            
+                            </a>
+                            <a href="https://www.instagram.com/uno_super_speciality_clinic/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="blank">&nbsp;&nbsp; <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/UNO_clinic_" target="blank">&nbsp;&nbsp;<i class="fab fa-twitter"></i></a>
+                            <br> <br>
+                            <a href="https://www.linkedin.com/in/unosuper-specialityclinics/" target="blank">&nbsp;&nbsp;<i class="fab fa-linkedin"></i></a>
+                            <a href="https://in.pinterest.com/unosuperspecialityclinics/"  target="blank" >&nbsp;&nbsp;<i class="fab fa-pinterest"></i></a>
+                            <a href="https://www.youtube.com/channel/UCi9Sh0usF_y3BI_C7nENAUg" target="_blank">&nbsp;&nbsp;<i class="fa-brands fa-youtube" target="blank"></i></a>
+
+                            
+
+                            </p></li>
+                      </ul>
+                  </div>
+    
+                  <div class="row">
+                      <div class="col-12">
+                          <ul>
+                              <li>  <h3 style="color:white"> <i class="ion-iphone"></i><strong>&nbsp;&nbsp;8309979799</strong> </h3></li>                    
+                          </ul>
+                      </div>
+                  </div>
+                  </div>
+
+                </div>  
+
+      </div>
+
+</div>
+
+
+<div class="footer-area-bottom theme-bg    "  style="background-color: white;" >
+  <div class="container ">
+     <div class="row ">
+        <div class="  col-lg-8 col-md-8 col-sm-7 ">
+          
+              <span style="color:#0C0531" class="text-center ">  ©2023 UNO Super Speciality Clinics .  All Rights Reserved by <a href="https://bhavicreations.com/" target="_blank" style="text-decoration: none;color:#e03f9a">Bhavi Creations</a> </span>
+           
+        </div> 
+        <div class=" col-lg-4 col-md-4 col-sm-5">
+          
+            
+                  <p><a href="terms.html"  class="text-center" style="text-decoration: none;color:#e03f9a"> Terms and conditions  </a> &nbsp;&nbsp;&nbsp;
+                <a href="privacy.html"  class="text-center" style="text-decoration: none;color:#e03f9a">Privacy & policy</a> 
+               </p>
+           
+        </div>
+     </div>
+  </div>
+</div>
+</footer> 
+
+<!-- end footer -->
+
+<script type='text/javascript' src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/wow.js"></script> 
+<script src="js/jquery.stellar.js"></script> 
+<script src="js/smooth-scroll.js"></script> 
+<script src="js/queryloader2.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap-datepicker.js"></script> 
+<script src="js/jquery.fancybox.js"></script> 
+<script src="js/jquery.maskedinput.js"></script> 
+<script src="js/jquery.ba-cond.min.js" type="text/javascript" ></script> 
+<script src="js/jquery.slitslider.js" type="text/javascript" ></script> 
+<script src="js/slider-settings.js"></script> 
+<script src="js/medicina.js"></script>
+ 
+  
+
+</body>
+</html>
